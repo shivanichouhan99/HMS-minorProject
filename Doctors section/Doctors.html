@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital management system</title>
+    <link rel="stylesheet" href="Doctors.css" class="css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
+</head>
+<body>
+
+    <!-- #header section starts here -->
+    <header class="header">
+        
+        <a href="#" class="logo"><i class="fa fa-heartbeat"></i> Medcare. </a>
+        <nav class="navbar">
+
+        <a href="/Frontend/index.html#Home">Home</a>
+        <a href="/Frontend/index.html#Services">Services</a>
+        <a href="/Frontend/index.html#About">About</a>
+        <!-- <a href="#Departments">Department</a> -->
+        <a href="/Frontend/index.html#Doctors">Doctors</a>
+        <a href="/Frontend/index.html#book">Appointments</a>
+        <a href="/Frontend/index.html#Review">Review</a>
+        <a href="/Frontend/index.html#Blogs">Blogs</a>
+
+
+        <a href="#" class="navlogo"></a>
+        <button class="button" id="form-open">Login</button>
+       </nav> 
+   </header>
+   <section class="home">
+
+       <div class="formContainer">
+           <i class="uil uil-times form_close"></i>
+           
+           <div class="loginform">
+               <form action="login.php" method="post">
+            <h2>Login</h2>
+            
+            <div class="inputbox">
+                <input type="email" placeholder="Enter your email" name="email" required/>
+                <i class="uil uil-envelope-alt email"></i>
+            </div>
+            <div class="inputbox">
+                <input type="password" placeholder="Enter your password" name="password" required/>
+                <i class="uil uil-lock password"></i>
+                <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+            <div class="option_field">
+                <span class="checkbox">
+                    <input type="checkbox" id="check">
+                    <label for="check">Remember me</label>
+                </span>
+                <a href="#" class="forgot_pw">Forgot password ?</a>
+            </div>
+            <button class="button">Login Now</button>
+            
+            <!-- <div class="login_signup">
+                Don't  have an account ?<a href="#" id="signup">Signup</a>
+            </div> -->
+        </form>
+    </div>
+
+
+    <!-- signup form -->
+     <div class="signupform">
+        <form action="#">
+     <h2>Signup</h2>
+     
+     <div class="inputbox">
+         <input type="email" placeholder="Enter your email" required/>
+         <i class="uil uil-envelope-alt email"></i>
+     </div>
+     <div class="inputbox">
+         <input type="password" placeholder="Create password" required/>
+         <i class="uil uil-lock password"></i>
+         <i class="uil uil-eye-slash pw_hide"></i>
+     </div>
+     <div class="inputbox">
+        <input type="password" placeholder="Confirm password" required/>
+        <i class="uil uil-lock password"></i>
+        <i class="uil uil-eye-slash pw_hide"></i>
+    </div>
+     <button class="button">Signup Now</button>
+     
+     <div class="login_signup">
+         Already have an account ?<a href="#" id="login">Login</a>
+     </div>
+ </form>
+</div>
+</div> 
+</section>
+
+
+
+
+       
+    </nav>
+    <div id="menu-btn" class="fa fa-bars"></div>
+</header>
+<!-- header section ends here -->
+
+
+<!-- # ICON section ends here -->
+<section class="doctors" id="doctors">
+    <h1 class="heading">Our <span> Doctors</span></h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="/images/doc1.avif" alt="">
+            <h3>Dr. John doe</h3>
+            <span>Padiatrician</span>
+            <div class="share">
+                <a href="https://www.google.com" class="fa fa-facebook-f"></a>
+                <a href="https://twitter.com/intent/tweet" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+                <a href="https://in.linkedin.com" class="fa fa-linkedin"></a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="/images/doc2.jpg" alt="">
+            <h3>Dr. Riya namdev</h3>
+            <span>Neurologist</span>
+            <div class="share">
+                <a href="https://www.facebook.com" class="fa fa-facebook-f"></a>
+                <a href="https://twitter.com/intent/tweet" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+                <a href="https://in.linkedin.com" class="fa fa-linkedin"></a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="/images/doc3.avif" alt="">
+            <h3>Dr. Nitish jain</h3>
+            <span>Dermatology</span>
+            <div class="share">
+                <a href="https://www.facebook.com" class="fa fa-facebook-f"></a>
+                <a href="https://twitter.com/intent/tweet" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+                <a href="https://in.linkedin.com" class="fa fa-linkedin"></a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="/images/doc4.jpg" alt="">
+            <h3>Dr. Verma kushwah</h3>
+            <span>Surgeon</span>
+            <div class="share">
+                <a href="https://www.facebook.com" class="fa fa-facebook-f"></a>
+                <a href="https://twitter.com/intent/tweet" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+                <a href="https://in.linkedin.com" class="fa fa-linkedin"></a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="/images/doc5.jpg" alt="">
+            <h3>Dr. Raj singh</h3>
+            <span>Orthopedics</span>
+            <div class="share">
+                <a href="https://www.facebook.com" class="fa fa-facebook-f"></a>
+                <a href="https://twitter.com/intent/tweet" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+                <a href="https://in.linkedin.com" class="fa fa-linkedin"></a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="/images/doc6.jpg" alt="">
+            <h3>Dr. shreee jain</h3>
+            <span>Cardiologist</span>
+            <div class="share">
+                <a href="https://www.facebook.com" class="fa fa-facebook-f"></a>
+                <a href="https://twitter.com/intent/tweet" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+                <a href="https://in.linkedin.com" class="fa fa-linkedin"></a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="/images/doc7.jpg" alt="">
+            <h3>Dr. mithali verma</h3>
+            <span>Neurosurgon</span>
+            <div class="share">
+                <a href="https://www.facebook.com" class="fa fa-facebook-f"></a>
+                <a href="https://twitter.com/intent/tweet" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+                <a href="https://in.linkedin.com" class="fa fa-linkedin"></a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="/images/doc8.webp" alt="">
+            <h3>Dr. ram kushwah</h3>
+            <span>Radiologist</span>
+            <div class="share">
+                <a href="https://www.facebook.com" class="fa fa-facebook-f"></a>
+                <a href="https://twitter.com/intent/tweet" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+                <a href="https://in.linkedin.com" class="fa fa-linkedin"></a>
+            </div>
+        </div>
+    </div>
+    <a href="/Appointment section/Appointment.html" class="btn1">Book Your Appointments here<span class="fa fa-chevron-right"></span></a>
+</section>
+</body>
+
+

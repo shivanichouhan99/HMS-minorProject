@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy Management System</title>
+    <link rel="stylesheet" href="Medical1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header class="header">
+        
+        <a href="#" class="logo"><i class="fa fa-heartbeat"></i> Medcare. </a>
+        <nav class="navbar">
+
+            <a href="/Frontend/index.html#Home">Home</a>
+            <a href="/Frontend/index.html#Services">Services</a>
+            <a href="/Frontend/index.html#About">About</a>
+            <!-- <a href="#Departments">Department</a> -->
+            <a href="/Frontend/index.html#Doctors">Doctors</a>
+            <a href="/Frontend/index.html#book">Appointments</a>
+            <a href="/Frontend/index.html#Review">Review</a>
+            <a href="/Frontend/index.html#Blogs">Blogs</a>
+
+
+        <a href="#" class="navlogo"></a>
+        <button class="button" id="form-open">Login</button>
+       </nav> 
+   </header>
+   <section class="home">
+
+       <div class="formContainer">
+           <i class="uil uil-times form_close"></i>
+           
+           <div class="loginform">
+               <form action="login.php" method="post">
+            <h2>Login</h2>
+            
+            <div class="inputbox">
+                <input type="email" placeholder="Enter your email" name="email" required/>
+                <i class="uil uil-envelope-alt email"></i>
+            </div>
+            <div class="inputbox">
+                <input type="password" placeholder="Enter your password" name="password" required/>
+                <i class="uil uil-lock password"></i>
+                <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+            <div class="option_field">
+                <span class="checkbox">
+                    <input type="checkbox" id="check">
+                    <label for="check">Remember me</label>
+                </span>
+                <a href="#" class="forgot_pw">Forgot password ?</a>
+            </div>
+            <button class="button">Login Now</button>
+            
+            <!-- <div class="login_signup">
+                Don't  have an account ?<a href="#" id="signup">Signup</a>
+            </div> -->
+        </form>
+    </div>
+
+
+    <!-- signup form -->
+     <div class="signupform">
+        <form action="#">
+     <h2>Signup</h2>
+     
+     <div class="inputbox">
+         <input type="email" placeholder="Enter your email" required/>
+         <i class="uil uil-envelope-alt email"></i>
+     </div>
+     <div class="inputbox">
+         <input type="password" placeholder="Create password" required/>
+         <i class="uil uil-lock password"></i>
+         <i class="uil uil-eye-slash pw_hide"></i>
+     </div>
+     <div class="inputbox">
+        <input type="password" placeholder="Confirm password" required/>
+        <i class="uil uil-lock password"></i>
+        <i class="uil uil-eye-slash pw_hide"></i>
+    </div>
+     <button class="button">Signup Now</button>
+     
+     <div class="login_signup">
+         Already have an account ?<a href="#" id="login">Login</a>
+     </div>
+ </form>
+</div>
+</div> 
+</section>
+
+
+<!-- form to book the medicine -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pharmacy Management System</h1>
+        <div class="medicine-form">
+            <form id="medicineForm">
+                <div class="form-group">
+                    <label for="medicineName">Medicine Name:</label>
+                    <input type="text" id="medicineName" placeholder="Enter medicine name" required>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" placeholder="Enter quantity" required>
+                </div>
+                <button type="submit">Add Medicine</button>
+            </form>
+            <div id="medicineList"></div>
+        </div>
+        <div class="buy-medicine">
+            <h2>Buy Medicines</h2>
+            <p>Please fill out the form below to buy medicines:</p>
+            <form id="buyMedicineForm">
+                <div class="form-group">
+                    <label for="medicineToBuy">Medicine:</label>
+                    <input type="text" id="medicineToBuy" placeholder="Enter medicine to buy" required>
+                </div>
+                <div class="form-group">
+                    <label for="quantityToBuy">Quantity:</label>
+                    <input type="number" id="quantityToBuy" placeholder="Enter quantity to buy" required>
+                </div>
+                <button type="submit">Buy</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+    <script src="Medical1.js"></script>
+</body>
+</html>

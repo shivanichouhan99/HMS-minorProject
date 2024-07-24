@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital management system</title>
+    <link rel="stylesheet" href="Apointment.css" class="css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> -->
+</head>
+<body>
+
+    <!-- #header section starts here -->
+    <header class="header">
+        
+        <a href="#" class="logo"><i class="fa fa-heartbeat"></i> Medcare. </a>
+        <nav class="navbar">
+
+            <a href="/Frontend/index.html#Home">Home</a>
+            <a href="/Frontend/index.html#Services">Services</a>
+            <a href="/Frontend/index.html#About">About</a>
+            <!-- <a href="#Departments">Department</a> -->
+            <a href="/Frontend/index.html#Doctors">Doctors</a>
+            <a href="/Frontend/index.html#book">Appointments</a>
+            <a href="/Frontend/index.html#Review">Review</a>
+            <a href="/Frontend/index.html#Blogs">Blogs</a>
+
+
+        <a href="#" class="navlogo"></a>
+        <button class="button" id="form-open">Login</button>
+       </nav> 
+   </header>
+   <section class="home">
+
+       <div class="formContainer">
+           <i class="uil uil-times form_close"></i>
+           
+           <div class="loginform">
+               <form action="login.php" method="post">
+            <h2>Login</h2>
+            
+            <div class="inputbox">
+                <input type="email" placeholder="Enter your email" name="email" required/>
+                <i class="uil uil-envelope-alt email"></i>
+            </div>
+            <div class="inputbox">
+                <input type="password" placeholder="Enter your password" name="password" required/>
+                <i class="uil uil-lock password"></i>
+                <i class="uil uil-eye-slash pw_hide"></i>
+            </div>
+            <div class="option_field">
+                <span class="checkbox">
+                    <input type="checkbox" id="check">
+                    <label for="check">Remember me</label>
+                </span>
+                <a href="#" class="forgot_pw">Forgot password ?</a>
+            </div>
+            <button class="button">Login Now</button>
+            
+            <!-- <div class="login_signup">
+                Don't  have an account ?<a href="#" id="signup">Signup</a>
+            </div> -->
+        </form>
+    </div>
+
+
+    <!-- signup form -->
+     <div class="signupform">
+        <form action="#">
+     <h2>Signup</h2>
+     
+     <div class="inputbox">
+         <input type="email" placeholder="Enter your email" required/>
+         <i class="uil uil-envelope-alt email"></i>
+     </div>
+     <div class="inputbox">
+         <input type="password" placeholder="Create password" required/>
+         <i class="uil uil-lock password"></i>
+         <i class="uil uil-eye-slash pw_hide"></i>
+     </div>
+     <div class="inputbox">
+        <input type="password" placeholder="Confirm password" required/>
+        <i class="uil uil-lock password"></i>
+        <i class="uil uil-eye-slash pw_hide"></i>
+    </div>
+     <button class="button">Signup Now</button>
+     
+     <div class="login_signup">
+         Already have an account ?<a href="#" id="login">Login</a>
+     </div>
+ </form>
+</div>
+</div> 
+</section>
+
+
+
+
+       
+    </nav>
+    <div id="menu-btn" class="fa fa-bars"></div>
+</header>
+<!-- header section ends here -->
+
+<!-- # Appiontment section starts here -->
+<section class="book" id="book">
+    <h1 class="heading"><span> Appointments</span></h1>
+      <div class="row">
+    <div class="image">
+        <img src="/images/appoi2.jpeg" alt="">
+    </div>
+    <form action="">
+        <h3>Book Appointments</h3>
+        <input type="text" placeholder="Your name" class="box">
+        <input type="number" placeholder="Your number" class="box">
+        <input type="email" placeholder="Your email" class="box">
+        <input type="date" class="box">
+        <input type="submit" value="Book now" class="btn" >
+    </form>
+</div>
+</section>
+
+
+<!-- Appointment section ends here -->
+</body>
